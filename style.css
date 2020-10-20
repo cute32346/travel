@@ -1,0 +1,532 @@
+*{
+  margin:0px;
+  box-sizing: border-box;
+  list-style:none;
+  text-decoration:none;
+  position:relative;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+}
+header{
+  z-index:100;
+  top:0px;
+  height:50px;
+  background-color: #000000;
+  position:fixed;
+  width:100%;
+}
+.logo{
+  margin-left:4%;
+  top:14px;
+  z-index:150;
+  position:fixed;
+  text-decoration: none;
+   
+}
+.logo a{
+  font-family:Copperplate;
+  font-size:18px;
+  color:#f1faee;
+  text-decoration:none;
+
+}
+
+
+.menu {
+  z-index:100;
+  right:4%;
+  top:15px;
+  position:fixed;
+  
+}
+.menu li{
+  
+  float:left;
+  margin-right:15px;
+   
+}
+.menu li a{
+  font-family:'微軟正黑體';
+  color:#f1faee;
+  font-weight:bold;
+  font-size:16px;
+  text-decoration:none;
+}
+.menu li a:hover{
+  color:#e63946;
+  text-decoration:none;
+}  
+ 
+.word{
+  margin-right:15%;
+  margin-left:15%;
+  margin-bottom:40px;
+  display:  flex;
+  align-items: center;
+  justify-content:  center;
+  margin-top:65px;
+  font-family:Copperplate;
+  font-size:20px;
+  color:#000;
+  line-height:30px;
+}
+.carousel{
+  
+  height:auto;
+  width:70%;
+  margin:auto;
+  top:50px;
+ }
+.carousel-inner img{
+  height:auto;
+  width:100%;
+  margin:auto;
+ }
+.showmenu{
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+ .word{
+  margin-left: 5%;
+  margin-right: 5%;
+  line-height:40px;
+  margin-top:20px;
+  display:inline-block;
+  font-size:30px;
+  color:#000;
+  }
+  
+.carousel{
+ 
+  height:auto;
+  width:100%;
+  top:0px;
+ }
+.carousel-inner img{
+  height:auto;
+  width:100%;
+  margin:auto;
+  
+ }
+header{
+  z-index:150;
+  top:0px;
+  height:80px;
+  background-color: #000;
+  opacity: 0.6;
+  position:fixed;
+  width:100%;
+ 
+  
+}
+
+.menu{
+  
+  background-color: #000;
+  opacity: 0.6;
+  width:100%;
+  z-index:500;
+  top:80px;
+  position: absolute;
+  overflow: hidden;
+  transition: max-height 0.4s;
+  max-height: 0px;
+  right: 0px;
+  left: 0px;
+}
+ 
+.menu li{
+  
+  width:100%;
+  top:0px;
+  padding:10px;
+  float:none;
+  margin-left: -20px;
+ }
+.menu li a{
+  
+  display: flex;
+  align-items: center;
+  justify-content:  center;
+  font-family:'微軟正黑體';
+  font-size:15px;
+  color:#fff;
+  text-decoration:none;
+ }
+
+.showmenu{ 
+  text-decoration: none;
+  z-index:500;
+  position: absolute;
+  display: inline-block;
+  float: right;
+  left:50%;
+  top:40px;
+  transform: translateX(-50%);
+  font-family: Copperplate;
+  
+ }
+.showmenu a {
+  font-size:20px;
+  text-decoration: none;
+  color:#fff;
+  border:solid 3px #000; 
+}
+
+.menu-show .menu{
+  max-height: 500px;
+  text-decoration: none;
+}
+
+.logo{
+  position:absolute;
+  display: inline-block;
+  left:45%;
+  top:15px;
+  transform: translateX(-45%);
+  z-index:150;
+  color:#fff;
+}
+
+.logo a{
+  margin-left:0;
+  font-family:Copperplate;
+  font-size:13px;
+  color:#f1faee;
+}  
+    
+}
+@media only screen and (max-width: 425px) {
+ .word{
+  margin-left: 5%;
+  margin-right: 5%;
+  line-height:40px;
+  
+  margin-top:90px;
+  
+  font-size:30px;
+  color:#000;
+  }
+  
+.carousel{
+ 
+  height:auto;
+  width:100%;
+  margin:auto;
+  top:80px;
+ }
+.carousel-inner img{
+  height:auto;
+  width:100%;
+  margin:auto;
+  
+ }
+header{
+  z-index:150;
+  top:0px;
+  height:80px;
+  background-color: #000;
+  opacity: 0.6;
+  position:fixed;
+  width:100%;
+ 
+  
+}
+
+ .menu{
+  background-color: #000;
+ 
+  width:100%;
+  z-index:500;
+  top:80px;
+  position: absolute;
+  overflow: hidden;
+  transition: max-height 0.4s;
+  max-height: 0px;
+  opacity: 0.6;
+   right: 0px;
+  left: 0px;
+}
+ 
+.menu li{
+width:100%;
+  top:0px;
+  padding:7px;
+ 
+ 
+  float:none;
+  margin-left: -20px;
+ }
+.menu li a{
+  display: flex;
+  align-items: center;
+  justify-content:  center;
+  font-family:'微軟正黑體';
+  font-size:15px;
+  color:#fff;
+  text-decoration:none;
+  
+}
+
+.showmenu{ 
+  
+  z-index:500;
+  position: absolute;
+  display: inline-block;
+  float: right;
+  left:50%;
+  top:40px;
+  transform: translateX(-50%);
+  font-family: Copperplate;
+  
+ }
+.showmenu a {
+  font-size:20px;
+  text-decoration: none;
+  color:#fff;
+  border:solid 3px #000; 
+}
+
+.menu-show .menu{
+  max-height: 500px;
+ 
+}
+
+.logo{
+  position:absolute;
+  display: inline-block;
+  left:45%;
+  top:15px;
+  transform: translateX(-45%);
+  z-index:150;
+  color:#fff;
+}
+
+.logo a{
+  margin-left:0;
+  font-family:Copperplate;
+  font-size:13px;
+  color:#f1faee;
+}  
+    
+}
+@media only screen and (max-width: 375px) {
+ .word{
+  line-height:35px;
+  margin-top:90px;
+  font-size:25px;
+  color:#000;
+  }
+  
+.carousel{
+ 
+  height:auto;
+  width:50%;
+  margin:auto;
+  margin-top:0px;
+ }
+.carousel-inner img{
+  height:auto;
+  width:100%;
+  margin:auto;
+  
+ }
+header{
+  z-index:150;
+  height:80px;
+  background-color: #000;
+  opacity: 0.6;
+  position:fixed;
+  width:100%;
+ 
+  
+}
+
+.menu{
+  background-color: #000;
+  opacity: 0.6;
+  left:0%;
+  right:0%;
+  width:100%;
+  z-index:500;
+  margin-top:0px;
+  position: fixed;
+  overflow: hidden;
+  transition: max-height 0.4s;
+  max-height: 0px;
+  
+}
+ 
+.menu li{
+  left:0%;
+  margin-right:6%;
+  top:0px;
+  padding:9px;
+  
+  position:relative;
+  align-items: center;
+  justify-content: center;
+  float:none;
+ 
+} 
+.menu li a{
+  top:-2px;
+  display:  flex;
+  align-items: center;
+  justify-content:  center;
+  font-family:'微軟正黑體';
+  font-size:15px;
+  color:#fff;
+  text-decoration:none;
+}
+
+.showmenu{ 
+  z-index:500;
+  font-size:20px;
+  color:#000;
+  text-decoration:none;
+  float: right;
+  margin-right:42%;
+  margin-top:0px;
+  font-family: Copperplate;
+  
+ }
+.showmenu a {
+  text-decoration: none;
+}
+.menu-show .menu{
+  max-height: 500px;
+ 
+}
+
+
+
+.logo{
+  left:45%;
+  transform:translate(-45%);
+  top:11px;
+  z-index:150;
+  position:fixed;
+  color:#f1faee;
+}
+
+.logo a{
+  margin-left:0;
+  font-family:Copperplate;
+  font-size:13px;
+  color:#f1faee;
+}  
+    
+  }
+  @media only screen and (max-width: 320px) {
+ .word{
+  line-height:35px;
+  margin-top:90px;
+  font-size:25px;
+  color:#000;
+  }
+  
+.carousel{
+  
+  height:200px;
+  width:100%;
+  margin:auto;
+  margin-top:0px;
+ }
+.carousel-inner img{
+  height:200px;
+  
+  margin:auto;
+  margin-top:0px;
+  position: relative;
+
+ }
+header{
+  z-index:150;
+  height:80px;
+  background-color: #000;
+  opacity: 0.6;
+  position:fixed;
+  width:100%;
+ 
+  
+}
+
+.menu{
+  background-color: #000;
+  opacity: 0.6;
+  left:0%;
+  right:0%;
+  width:100%;
+  z-index:500;
+  margin-top:0px;
+  position: fixed;
+  overflow: hidden;
+  transition: max-height 0.4s;
+  max-height: 0px;
+  
+}
+ 
+.menu li{
+  left:0%;
+  margin-right:6%;
+  top:0px;
+  padding:9px;
+  
+  position:relative;
+  align-items: center;
+  justify-content: center;
+  float:none;
+ 
+} 
+.menu li a{
+  top:-2px;
+  display:  flex;
+  align-items: center;
+  justify-content:  center;
+  font-family:'微軟正黑體';
+  font-size:15px;
+  color:#fff;
+  text-decoration:none;
+}
+
+.showmenu{ 
+  z-index:500;
+  font-size:20px;
+  color:#000;
+  text-decoration:none;
+  float: right;
+  margin-right:42%;
+  margin-top:0px;
+  font-family: Copperplate;
+  
+ }
+.showmenu a {
+  text-decoration: none;
+}
+.menu-show .menu{
+  max-height: 500px;
+ 
+}
+
+
+
+.logo{
+  left:45%;
+  transform:translate(-45%);
+  top:11px;
+  z-index:150;
+  position:fixed;
+  color:#f1faee;
+}
+
+.logo a{
+  margin-left:0;
+  font-family:Copperplate;
+  font-size:13px;
+  color:#f1faee;
+}  
+    
+  }
